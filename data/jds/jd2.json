@@ -1,0 +1,15 @@
+{
+  "id": "jd2",
+  "title": "Machine Learning Engineer – Dataviv Technologies",
+  "location": "Remote / India",
+  "role": "Machine Learning Engineer",
+  "responsibilities": [
+    "Design, implement, and optimize ML/DL models for classification, regression, NLP, and computer vision",
+    "Work on data pipelines including ingestion, cleaning, and feature engineering"
+  ],
+  "requirements": [
+    "Strong programming skills (Python)",
+    "Experience with TensorFlow or PyTorch",
+    "Familiarity with data preprocessing, versioning, and debugging tools"
+  ]
+}

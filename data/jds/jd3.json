@@ -1,0 +1,16 @@
+{
+  "id": "jd3",
+  "title": "Machine Learning Engineer – Micro1",
+  "location": "APAC / Remote",
+  "role": "Machine Learning Engineer",
+  "responsibilities": [
+    "Develop robust ML algorithms using TensorFlow and scikit-learn",
+    "Perform data preprocessing and feature engineering",
+    "Deploy and maintain models in production environments"
+  ],
+  "requirements": [
+    "Proficiency in ML frameworks (TensorFlow, scikit-learn)",
+    "Strong knowledge of Python and SQL",
+    "Experience with MLOps concepts is a plus"
+  ]
+}

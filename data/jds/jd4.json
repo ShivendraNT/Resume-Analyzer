@@ -1,0 +1,17 @@
+{
+  "id": "jd4",
+  "title": "NLP Research Intern – AI Lab",
+  "location": "India / Remote",
+  "role": "NLP Research Intern",
+  "responsibilities": [
+    "Build and fine-tune transformer-based models (BERT, GPT)",
+    "Work on text classification, summarization, and named entity recognition",
+    "Evaluate models using BLEU, ROUGE, and F1 score",
+    "Perform tokenization, embedding generation, and attention masking"
+  ],
+  "requirements": [
+    "Experience with Hugging Face Transformers, spaCy, and scikit-learn",
+    "Strong understanding of deep learning and NLP fundamentals",
+    "Familiarity with PyTorch or TensorFlow"
+  ]
+}
