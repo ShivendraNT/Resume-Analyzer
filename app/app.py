@@ -1,5 +1,5 @@
 import streamlit as st
-from resume import analyze_resume,extract_text
+from ..resume import analyze_resume,extract_text
 import pandas as pd
 import matplotlib.pyplot as plt
 
