@@ -2,6 +2,7 @@ from sentence_transformers import SentenceTransformer
 import pandas as pd
 import json
 from pathlib import Path
+from scipy.spatial.distance import cosine
 
 # Loading model
 model=SentenceTransformer("all-MiniLM-L6-v2")
@@ -18,7 +19,8 @@ def load_jds(filename: str):
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# just filename, no path prefix
+# Loading Resumes
+
 file_path=RESUME_DIR / "Resume.csv"
 df=pd.read_csv(file_path)
 resumes = df["Resume"].dropna().tolist()
@@ -26,6 +28,8 @@ category=df['Category'].tolist()
 print("Loading Successfully Done")
 
 resume_embedded=model.encode(resumes)
+
+# JDs are in json format but bert expect a continous text
 
 jd_text=""
 for i in range(1,6):
@@ -41,9 +45,20 @@ for i in range(1,6):
     else:
         jd_text=str(jd)
 
+# Embedding JDs
 
 jd_embedded=model.encode(jd_text)
-print(resume_embedded)
-print(jd_embedded)
 
+# Computing cosine similarities for the first 10 resumes
+
+scores=[]
+
+for i,emb in enumerate(resume_embedded[:]):
+    sim=1-cosine(jd_embedded,emb)
+    scores.append((i,sim,category[i]))
+
+# Sort and Log 
+scores.sort(key=lambda x:x[1],reverse=True)
+for idx,sim,cat in scores:
+    print(f"Resume {idx} (Category: {cat}): Similarity={sim:.4f}")
 
