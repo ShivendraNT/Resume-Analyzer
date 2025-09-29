@@ -3,6 +3,7 @@ import pandas as pd
 import json
 from pathlib import Path
 from scipy.spatial.distance import cosine
+from keybert import KeyBERT
 
 # Loading model
 model=SentenceTransformer("all-MiniLM-L6-v2")
@@ -32,7 +33,7 @@ resume_embedded=model.encode(resumes)
 # JDs are in json format but bert expect a continous text
 
 jd_text=""
-for i in range(1,6):
+for i in range(1,16):
     jd = load_jds(f"jd{i}.json")
     if isinstance(jd,dict):
         parts=[]
@@ -57,8 +58,4 @@ for i,emb in enumerate(resume_embedded[:]):
     sim=1-cosine(jd_embedded,emb)
     scores.append((i,sim,category[i]))
 
-# Sort and Log 
-scores.sort(key=lambda x:x[1],reverse=True)
-for idx,sim,cat in scores:
-    print(f"Resume {idx} (Category: {cat}): Similarity={sim:.4f}")
-
+# Creating Jd

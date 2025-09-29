@@ -1,0 +1,16 @@
+{
+  "id": "jd_data_scientist",
+  "title": "Data Scientist – Analytics Co.",
+  "location": "Bangalore, India",
+  "role": "Data Scientist",
+  "responsibilities": [
+    "Collect, clean, and preprocess datasets for analysis",
+    "Develop predictive models and perform hypothesis testing",
+    "Communicate insights with visualizations and reports"
+  ],
+  "requirements": [
+    "Strong Python and SQL skills",
+    "Experience with scikit-learn, TensorFlow, or PyTorch",
+    "Understanding of statistics and ML fundamentals"
+  ]
+}

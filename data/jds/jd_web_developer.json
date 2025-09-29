@@ -1,0 +1,16 @@
+{
+  "id": "jd_web_developer",
+  "title": "Web Developer – Startup",
+  "location": "Remote",
+  "role": "Web Developer",
+  "responsibilities": [
+    "Develop responsive websites and web apps",
+    "Work with designers to implement UI/UX",
+    "Maintain and optimize site performance"
+  ],
+  "requirements": [
+    "HTML, CSS, JavaScript proficiency",
+    "Experience with React or Angular",
+    "Basic backend knowledge (Node.js, Django)"
+  ]
+}

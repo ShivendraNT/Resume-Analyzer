@@ -1,0 +1,16 @@
+{
+  "id": "jd_software_engineer",
+  "title": "Software Engineer – Product Company",
+  "location": "Hyderabad, India",
+  "role": "Software Engineer",
+  "responsibilities": [
+    "Build and maintain web applications",
+    "Collaborate with product managers to implement features",
+    "Write clean, tested, and scalable code"
+  ],
+  "requirements": [
+    "Experience with full-stack development",
+    "Knowledge of REST APIs and databases",
+    "Strong problem-solving and debugging skills"
+  ]
+}

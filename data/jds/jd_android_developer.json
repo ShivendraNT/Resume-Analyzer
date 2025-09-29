@@ -1,0 +1,16 @@
+{
+  "id": "jd_android_developer",
+  "title": "Android Developer – Mobile App Co.",
+  "location": "Bangalore, India",
+  "role": "Android Developer",
+  "responsibilities": [
+    "Design and develop Android applications",
+    "Collaborate with backend team for APIs",
+    "Publish and maintain apps on Play Store"
+  ],
+  "requirements": [
+    "Experience with Kotlin/Java",
+    "Familiarity with Android Jetpack components",
+    "Understanding of mobile UI/UX guidelines"
+  ]
+}
