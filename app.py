@@ -1,5 +1,11 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from resume import analyze_resume, extract_text
+
+
 import streamlit as st
-from ..resume import analyze_resume,extract_text
 import pandas as pd
 import matplotlib.pyplot as plt
 

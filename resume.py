@@ -71,6 +71,8 @@ def analyze_resume(resume_text:str):
     # Extract Keywords and find missing ones
     raw_keywords = [kw for kw, _ in kw_model.extract_keywords(best_jd_text, top_n=20)]
     jd_keywords = [kw for kw in raw_keywords if kw.lower() in TECH_SKILLS]
+    if not jd_keywords:
+        jd_keywords = raw_keywords
 
     missing = [kw for kw in jd_keywords if kw.lower() not in resume_text.lower()]
     present_keywords = [kw for kw in jd_keywords if kw.lower() not in [m.lower() for m in missing]]
